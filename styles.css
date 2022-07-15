@@ -1,0 +1,43 @@
+:root{
+    --cl-dark-cyan:hsl(158, 36%, 37%);
+    --cl-cream:hsl(30, 38%, 92%);
+    --cl-dark-blue:hsl(212, 21%, 14%);
+    --cl-grayish-blue:hsl(228, 12%, 48%);
+    --cl-white:hsl(0, 0%, 100%);
+
+    --fs-p:14px;
+
+    --ff-primary:'Montserrat', sans-serif;
+    --ff-fr:'Fraunces', serif;
+}
+
+body{
+    background-color: var(--cl-cream);
+    font-family: var(--ff-primary);
+}
+.perfume--container{
+    background-color: var(--cl-white);
+    border-radius: 12px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+.hero-img{
+    border-radius: 12px 0 0 12px;
+    flex-basis: 60%;
+    background-image: url("./images/image-product-desktop.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.hero{
+    padding: 2rem;
+    width: 50%;
+}
+.tag{
+    color: var(--cl-grayish-blue);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
