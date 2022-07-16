@@ -27,6 +27,7 @@ body{
     display: flex;
 }
 .hero-img{
+    min-height: 100px;
     border-radius: 12px 0 0 12px;
     flex-basis: 50%;
     background-image: url("./images/image-product-desktop.jpg");
@@ -76,4 +77,20 @@ body{
     justify-content: center;
     gap: 10px;
     border-radius: 8px;
+}
+
+@media (max-width: 672px) {
+   .perfume--container{
+    flex-direction: column;
+    width: 90%;
+    position: unset;
+    transform: unset;
+    -webkit-transform:unset;
+    margin: 0 auto;
+   } 
+   .hero-img{
+    background-image: url("./images/image-product-mobile.jpg");
+    min-height: 300px;
+    border-radius: 12px 12px 0 0;
+   }
 }
