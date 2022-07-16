@@ -16,6 +16,7 @@ body{
     font-family: var(--ff-primary);
 }
 .perfume--container{
+    width: 650px;
     background-color: var(--cl-white);
     border-radius: 12px;
     position: absolute;
@@ -27,17 +28,52 @@ body{
 }
 .hero-img{
     border-radius: 12px 0 0 12px;
-    flex-basis: 60%;
+    flex-basis: 50%;
     background-image: url("./images/image-product-desktop.jpg");
     background-position: center;
     background-size: cover;
 }
 .hero{
     padding: 2rem;
-    width: 50%;
+    flex-basis: 50%;
 }
 .tag{
     color: var(--cl-grayish-blue);
     text-transform: uppercase;
     letter-spacing: 3px;
+}
+.header{
+    font-family: var(--ff-fr);
+    width: 90%;
+    color: var(--cl-dark-blue);
+}
+.hero-info{
+    width: 90%;
+    font-size: var(--fs-p);
+    color: var(--cl-grayish-blue);
+    line-height: 23px;
+}
+.price{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.price-new{
+    color: var(--cl-dark-cyan);
+    font-family: var(--ff-fr);
+    font-size: 22px;
+}
+.price-old{
+  text-decoration: line-through;
+  color: var(--cl-grayish-blue);
+  font-size: 12px;
+}
+.primary-btn{
+    background-color: var(--cl-dark-cyan);
+    color: var(--cl-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: 8px;
 }
